@@ -17,7 +17,7 @@ function Table({
   handleNext, // Function to go to the next page
 }) {
   return (
-    <div className='flex justify-center py-6 bg-gray-100'>
+    <div className='flex justify-center py-6 bg-purple-100'>
       {/* Container that centers the table on the page and adds padding and background color */}
 
       <div className='max-w-3xl w-full p-2 bg-white shadow-lg rounded-lg'>

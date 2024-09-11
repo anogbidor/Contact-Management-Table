@@ -15,7 +15,7 @@ function TableHeader({
   }
 
   return (
-    <thead className='bg-blue-400 text-white'>
+    <thead className='bg-purple-500 text-white'>
       {/* Table header with blue background and white text */}
       <tr>
         <th className='py-3 px-4 pe-0'>
@@ -40,27 +40,36 @@ function TableHeader({
         {/* Sortable Name column header */}
         <th
           className='px-6 py-3 text-start text-xs font-medium uppercase cursor-pointer'
-          onClick={() => handleSort('name')} // Calls the sorting function when clicked, sorting by 'name'
+          // Calls the sorting function when clicked, sorting by 'name'
         >
-          Name {getSortIcon('name')}{' '}
+          <span className='cursor-pointer' onClick={() => handleSort('name')}>
+            Name {getSortIcon('name')}
+          </span>
           {/* Displays the sort icon based on the current sort state */}
         </th>
 
         {/* Sortable Email column header */}
         <th
           className='px-6 py-3 text-start text-xs font-medium uppercase cursor-pointer'
-          onClick={() => handleSort('email')} // Calls the sorting function for the 'email' column
+          // Calls the sorting function for the 'email' column
         >
-          Email {getSortIcon('email')}{' '}
+          <span className='cursor-pointer' onClick={() => handleSort('email')}>
+            Email {getSortIcon('email')}
+          </span>
           {/* Displays the sort icon for the 'email' field */}
         </th>
 
         {/* Sortable Company column header */}
         <th
           className='px-6 py-3 text-start text-xs font-medium uppercase cursor-pointer'
-          onClick={() => handleSort('company')} // Calls the sorting function for the 'company' column
+          // Calls the sorting function for the 'company' column
         >
-          Company {getSortIcon('company')}{' '}
+          <span
+            className='cursor-pointer'
+            onClick={() => handleSort('company')}
+          >
+            Company {getSortIcon('company')}
+          </span>
           {/* Displays the sort icon for the 'company' field */}
         </th>
 

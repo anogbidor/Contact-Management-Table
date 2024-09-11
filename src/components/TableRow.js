@@ -17,23 +17,23 @@ function TableRow({ person, handleDelete, handleCheckboxChange, isSelected }) {
             onChange={() => handleCheckboxChange(person.id)} // Call function to handle checkbox changes
             checked={isSelected} // Checked state is controlled by the 'isSelected' prop
           />
-          <label className='sr-only'>Checkbox</label>{' '}
+          <label className='sr-only'>Checkbox</label>
           {/* Label for accessibility */}
         </div>
       </td>
 
       {/* Name Column */}
-      <td className='px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800'>
+      <td className='px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-700'>
         {person.name} {/* Display the person's name */}
       </td>
 
       {/* Email Column */}
-      <td className='px-6 py-4 whitespace-nowrap text-sm text-gray-800'>
+      <td className='px-6 py-4 whitespace-nowrap text-sm text-gray-700'>
         {person.email} {/* Display the person's email */}
       </td>
 
       {/* Company Column */}
-      <td className='px-6 py-4 whitespace-nowrap text-sm text-gray-800'>
+      <td className='px-6 py-4 whitespace-nowrap text-sm text-purple-800'>
         {person.company} {/* Display the person's company */}
       </td>
 
@@ -41,7 +41,7 @@ function TableRow({ person, handleDelete, handleCheckboxChange, isSelected }) {
       <td className='px-6 py-4 whitespace-nowrap text-end text-sm font-medium'>
         <button
           type='button'
-          className='inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-red-500 hover:text-blue-800 focus:outline-none'
+          className='inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-red-500 hover:text-purple-600 focus:outline-none'
           onClick={() => handleDelete(person.id)} // Call function to delete the row when clicked
         >
           {/* SVG icon for trash (delete) button */}

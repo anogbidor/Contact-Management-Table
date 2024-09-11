@@ -1,10 +1,10 @@
 function SearchBar({ handleSearch }) {
   return (
     <div className='py-3 px-4'>
-      {' '}
+   
       {/* Container for the search bar with padding */}
       <div className='relative max-w-xs'>
-        {' '}
+       
         {/* Search bar wrapper with max width */}
         <label className='sr-only'>Search</label>{' '}
         {/* Screen reader only label for accessibility */}
@@ -12,9 +12,9 @@ function SearchBar({ handleSearch }) {
         <input
           type='text' // Text input field for the search query
           id='hs-table-with-pagination-search' // ID for the input field
-          className='bg-blue-50 py-2 px-3 ps-9 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none'
+          className='bg-blue-50 py-2 px-3 ps-9 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:z-10 focus:border-blue-100 focus:ring-blue-100 disabled:opacity-50 disabled:pointer-events-none'
           // Styling classes: sets background, padding, width, border, shadow, and focus effects for the input field
-          placeholder='Search for contact' // Placeholder text guiding the user
+          placeholder='Search for a contact' // Placeholder text guiding the user
           onChange={(e) => handleSearch(e.target.value)} // Calls the handleSearch function when input value changes, passing the current input
         />
         {/* Search icon placed inside the input field */}

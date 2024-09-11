@@ -113,7 +113,7 @@ function App() {
       {error ? (
         <p>{error}</p> // Display error if fetching data fails
       ) : data.length === 0 ? (
-        <div className='flex flex-col items-center justify-center h-screen'>
+        <div className='flex flex-col items-center justify-center h-screen bg-purple-100'>
           <Spinner /> {/* Show spinner while data is loading */}
           <p className='mt-4 text-gray-700'>Loading...</p>{' '}
           {/* Loading message */}
