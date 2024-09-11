@@ -96,6 +96,6 @@ Challenges Faced
 Future Improvements
 
 	*	Add API integration: Currently, data is hardcoded. This can be expanded to fetch contacts from an external API.
- *	Bulk Actions: Enable bulk delete or edit operations for selected contacts.
+ 	*	Bulk Actions: Enable bulk delete or edit operations for selected contacts.
 	*	Loading Spinner: Add a loading spinner when fetching data or navigating between pages.
 	*	Additional Sorting Fields: Allow sorting by more fields (e.g., phone number, address).
