@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { fetchMockData } from './theBackend/dataBase'
+import { fetchMockData } from './mockData/dataBase'
 import Table from './components/Table'
 
 function App() {

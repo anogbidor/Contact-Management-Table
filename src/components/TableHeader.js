@@ -20,7 +20,7 @@ function TableHeader({
       <tr>
         <th className='py-3 px-4 pe-0'>
           <div className='flex items-center h-5'>
-            {/* "Select All" checkbox */}
+           
             <input
               id='hs-table-pagination-checkbox-all'
               type='checkbox'
@@ -37,7 +37,7 @@ function TableHeader({
           </div>
         </th>
 
-        {/* Sortable Name column header */}
+
         <th
           className='px-6 py-3 text-start text-xs font-medium uppercase cursor-pointer'
           // Calls the sorting function when clicked, sorting by 'name'
@@ -73,10 +73,9 @@ function TableHeader({
           {/* Displays the sort icon for the 'company' field */}
         </th>
 
-        {/* Action column header (non-sortable) */}
+       
         <th className='px-6 py-3 text-end text-xs font-medium uppercase'>
-          Action{' '}
-          {/* Header for the action buttons (e.g., delete) in the table rows */}
+         
         </th>
       </tr>
     </thead>

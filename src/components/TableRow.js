@@ -1,8 +1,4 @@
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
-// TableRow component renders individual rows in the table, displaying the person's data
-// and offering the ability to select, and delete each row.
 
 function TableRow({ person, handleDelete, handleCheckboxChange, isSelected }) {
   return (
@@ -24,17 +20,17 @@ function TableRow({ person, handleDelete, handleCheckboxChange, isSelected }) {
 
       {/* Name Column */}
       <td className='px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-700'>
-        {person.name} {/* Display the person's name */}
+        {person.name} 
       </td>
 
       {/* Email Column */}
       <td className='px-6 py-4 whitespace-nowrap text-sm text-gray-700'>
-        {person.email} {/* Display the person's email */}
+        {person.email} 
       </td>
 
       {/* Company Column */}
       <td className='px-6 py-4 whitespace-nowrap text-sm text-purple-800'>
-        {person.company} {/* Display the person's company */}
+        {person.company} 
       </td>
 
       {/* Action Column: Delete Button */}
@@ -42,9 +38,9 @@ function TableRow({ person, handleDelete, handleCheckboxChange, isSelected }) {
         <button
           type='button'
           className='inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-red-500 hover:text-purple-600 focus:outline-none'
-          onClick={() => handleDelete(person.id)} // Call function to delete the row when clicked
+          onClick={() => handleDelete(person.id)} 
         >
-          {/* SVG icon for trash (delete) button */}
+          
           <svg
             className='w-5 h-5'
             xmlns='http://www.w3.org/2000/svg'
@@ -55,12 +51,12 @@ function TableRow({ person, handleDelete, handleCheckboxChange, isSelected }) {
             strokeLinecap='round'
             strokeLinejoin='round'
           >
-            {/* Trash icon paths */}
-            <path d='M3 6h18' /> {/* Horizontal top bar of the trash can */}
-            <path d='M19 6l-1 14H6L5 6' /> {/* Trash can body */}
-            <path d='M10 11v6' /> {/* First vertical line representing trash */}
+           
+            <path d='M3 6h18' />
+            <path d='M19 6l-1 14H6L5 6' /> 
+            <path d='M10 11v6' /> 
             <path d='M14 11v6' />{' '}
-            {/* Second vertical line representing trash */}
+            
           </svg>
         </button>
       </td>
